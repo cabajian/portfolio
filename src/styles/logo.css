@@ -1,0 +1,71 @@
+svg {
+    animation-name: expandUp;
+    -webkit-animation-name: expandUp;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    -webkit-animation-timing-function: ease;
+    visibility: visible !important;
+    width: 75px;
+    height: 100px;
+}
+svg {
+    stroke-dasharray: 50;
+    stroke-dashoffset: 0;
+    animation: pathReveal 0.75s linear;
+}
+svg line {
+    stroke: #3B82F6;
+    stroke-width: 5;
+    stroke-opacity: 1;
+    animation: lineReveal 0.75s linear;
+}
+svg .node:nth-child(n+2) {
+    animation: pathReveal 0.75s linear, nodeReveal 1s ease-in-out 1s forwards;
+    fill: #3B82F6;
+}
+@keyframes expandUp {
+    0% {
+        transform: translateY(100%) scale(0.6) scaleY(0.5);
+   }
+    60% {
+        transform: translateY(-7%) scaleY(1.12);
+   }
+    75% {
+        transform: translateY(3%);
+   }
+    100% {
+        transform: translateY(0%) scale(1) scaleY(1);
+   }
+}
+@keyframes nodeReveal {
+    0% {
+        stroke-width: 4.91;
+        fill-opacity: 0;
+   }
+    50% {
+        stroke-width: 8.5925;
+        fill-opacity: 1;
+   }
+    100% {
+        stroke-width: 4.91;
+        fill-opacity: 1;
+   }
+}
+@keyframes pathReveal {
+    from {
+        stroke-dashoffset: 50;
+   }
+    to {
+        stroke-dashoffset: 0;
+   }
+}
+@keyframes lineReveal {
+    from {
+        stroke-dashoffset: 50;
+        fill-opacity: 0;
+   }
+    to {
+        stroke-dashoffset: 0;
+        fill-opacity: 1;
+   }
+}
