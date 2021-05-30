@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Chris' Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+  <meta name="description" content="Project Portfolio">
+  <meta name="author" content="Chris Abajian">
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600" rel="stylesheet">
+  <link href="styles/styles.css" rel="stylesheet">
+</head>
+<body class="bg-blue-50 text-gray-600" style="font-family: Work Sans,Helvetica,Arial,sans-serif">
+
+<!-- ******************** -->
+<!-- HEADER               -->
+<!-- ******************** -->
+<header class="max-w-screen-lg h-32 mx-auto px-20 flex items-center justify-center sm:justify-end">
+    <nav class="w-60 flex justify-between text-lg sm:text-xl">
+        <a href="#projects" class="pb-2 transition-all hover:text-blue-500 hover:opacity-80 border-b-4 border-transparent hover:border-blue-500">Projects</a>
+        <a href="#contact" class="pb-2 transition-all hover:text-blue-500 hover:opacity-80 border-b-4 border-transparent hover:border-blue-500">Contact</a>
+    </nav>
+</header>
+
+<!-- ******************** -->
+<!-- CONTENT              -->
+<!-- ******************** -->
+<div class="max-w-screen-lg mx-auto px-4 sm:px-8">
+    <!-- Hero Container -->
+    <div id="hero" class="mt-12 sm:mt-40">
+        <!-- Hero Title -->
+        <div class="flex">
+            <object class="w-12 sm:w-20" type="image/svg+xml" data="styles/logo.svg">[Logo]</object>
+            <h1 class="ml-4 sm:ml-8 flex self-center text-blue-500 text-4xl sm:text-6xl md:text-7xl font-mono">Chris Abajian</h1>
+        </div>
+        <!-- Hero Content -->
+        <div class="my-12 sm:my-16 text-xl sm:text-2xl font-light">
+            <p class="mb-4">I'm an RIT Computer Engineering student with a passion for digital design.</p>
+            <p>Check out my <a class="text-blue-500 hover:opacity-80 font-semibold" href="#projects">side-projects</a> below!</p>
+        </div>
+    </div>
+
+    <!-- About Container -->
+    <div id="about">
+        <div class="shadow-xl">
+            <div class="h-7 rounded-t-lg bg-gray-300 flex items-center">
+                <div class="w-4 h-4 ml-2 inline-block rounded-full bg-red-400"></div>
+                <div class="w-4 h-4 ml-2 inline-block rounded-full bg-yellow-400"></div>
+                <div class="w-4 h-4 ml-2 inline-block rounded-full bg-green-400"></div>
+                <span class="ml-4 font-mono">chris@dev: ~/portfolio</span>
+            </div>
+            <div class="p-8 rounded-b-md bg-gray-700 font-mono text-white">
+                <div><span class="text-yellow-200">resume_gen</span><span> #(</span></div>
+                <div class="pl-4"><span class="w-36 inline-block">.EMAIL</span><span>(<a href="mailto:abajianchris@gmail.com" class="text-blue-300 hover:opacity-80">"abajianchris@gmail.com"</a>),</span></div>
+                <div class="pl-4"><span class="w-36 inline-block">.LINKEDIN</span><span>(<a href="https://www.linkedin.com/in/christopher-abajian-018a44180/" class="text-blue-300 hover:opacity-80">"linkedin.com/cabajian"</a>),</span></div>
+                <div class="pl-4"><span class="w-36 inline-block">.GITHUB</span><span>(<a href="https://github.com/cabajian" class="text-blue-300 hover:opacity-80">"github.com/cabajian"</a>)</span></div>
+                <div><span>) </span><span class="text-yellow-200">resume_gen_inst</span><span> (</span></div>
+                <div class="pl-4"><span class="w-36 inline-block">.i_location</span><span>(<span class="whitespace-nowrap text-pink-200">"Rochester, NY"</span>),</span></div>
+                <div class="pl-4"><span class="w-36 inline-block">.i_education</span><span>(<span class="whitespace-nowrap text-pink-200">"BS Computer Engineering"</span>),</span></div>
+                <div class="pl-4"><span class="w-36 inline-block">.i_university</span><span>(<span class="text-pink-200">"Rochester Institute of Technology"</span>),</span></div>
+                <div class="pl-4"><span class="w-36 inline-block">.i_skills</span><span>({<span class="whitespace-nowrap text-pink-200">"Verilog"</span>, <span class="whitespace-nowrap text-pink-200">"VHDL"</span>, <span class="whitespace-nowrap text-pink-200">"C"</span>, <span class="whitespace-nowrap text-pink-200">"Xilinx Vivado"</span>, <span class="whitespace-nowrap text-pink-200">"ModelSim"</span>, <span class="whitespace-nowrap text-pink-200">"TCL"</span>, <span class="whitespace-nowrap text-pink-200">"Linux"</span>}),</span></div>
+                <div class="pl-4"><span class="w-36 inline-block">.i_interests</span><span>({<span class="whitespace-nowrap text-pink-200">"hiking"</span>, <span class="whitespace-nowrap text-pink-200">"paddle boarding"</span>, <span class="whitespace-nowrap text-pink-200">"soccer"</span>, <span class="whitespace-nowrap text-pink-200">"web design"</span>}),</span></div>
+                <div class="pl-4"><span class="w-36 inline-block">.o_resume</span><span>(<a class="text-blue-300  hover:opacity-80" href="static/chrisabajian_resume_may2021.pdf">my_resume</a>)</span></div>
+                <div><span>);<span class="bg-white bg-opacity-80" style="animation: pulse 1000ms cubic-bezier(0,5,1,5) infinite">&nbsp;</span></div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Projects Container -->
+    <div id="projects">
+        <div class="my-20 flex justify-center">
+            <h1 class="py-6 inline-block text-2xl font-bold border-b-8 border-blue-500">Projects</h1>
+        </div>
+        <!-- Project Card -->
+        <div class="mb-16 bg-white rounded-md shadow-xl flex">
+            <img src="static/proj-autocar.png" class="hidden lg:inline-block object-cover w-1/3 rounded-l-md border-r-8 border-blue-500">
+            <div class="p-8 lg:p-16 border-l-8 border-blue-500">
+                <h2 class="mb-12 font-semibold text-3xl">Intelligent Motorized Racecar</h2>
+                <p class="mb-2 font-sans">This was a semester-long project that involved programming an intelligent motorized racecar that could autonomously drive itself around a race track. The main controller for the car was a FRDM K64F microcontroller that connected to a motorshield to drive two DC motors, a linescan camera, and a steering servo. A full IEEE-standard paper was written and is available in the project source.</p>
+                <p class="mb-8 font-sans">This car won first place in the competition against other classmates (humble brag).</p>
+                <div class="mb-8 flex justify-start flex-wrap">
+                    <div class="mr-4 py-1 px-2 border-2 border-green-300 rounded-md font-light">C</div>
+                    <div class="mr-4 py-1 px-2 border-2 border-green-300 rounded-md font-light">Keil µVision</div>
+                </div>
+                <a class="mb-1 tracking-wide text-blue-500 font-semibold hover:opacity-80 transition-opacity flex items-center" href="https://github.com/cabajian/intelligent-racecar"><object class="h-4" type="image/svg+xml" data="static/github-icon.svg">[Github]</object>View Source</a>
+            </div>
+        </div>
+        <!-- Project Card -->
+        <div class="mb-16 bg-white rounded-md shadow-xl flex">
+            <img src="static/proj-medfilter.png" class="hidden lg:inline-block object-cover w-1/3 rounded-l-md border-r-8 border-blue-500">
+            <div class="p-8 lg:p-16 border-l-8 border-blue-500">
+                <h2 class="mb-12 font-semibold text-3xl">Median Filter</h2>
+                <p class="mb-2 font-sans">This project showcases a median filter implemented on a Nexys4 DDR FPGA. Matlab was used to send an image to the FPGA via UART, and the image was stored in DDR2 memory using AXI Stream/Lite interfaces. A pipelined median filter was designed to process the image.</p>
+                <p class="mb-8 font-sans">A continuation of this project used MicroBlaze to compare a purely soft-core processor implementation against a hardware coprocessor's. The hardware coprocessor implementation had a speedup of 14 over the MicroBlaze implementation.</p>
+                <div class="mb-8 flex justify-start flex-wrap">
+                    <div class="mr-4 py-1 px-2 border-2 border-green-300 rounded-md font-light">VHDL</div>
+                    <div class="mr-4 py-1 px-2 border-2 border-green-300 rounded-md font-light">C</div>
+                    <div class="mr-4 py-1 px-2 border-2 border-green-300 rounded-md font-light">Vivado</div>
+                    <div class="mr-4 py-1 px-2 border-2 border-green-300 rounded-md font-light">MicroBlaze</div>
+                </div>
+                <a class="mb-1 tracking-wide text-blue-500 font-semibold hover:opacity-80 transition-opacity flex items-center" href="https://github.com/cabajian/median-filter"><object class="h-4" type="image/svg+xml" data="static/github-icon.svg">[Github]</object>View Source (Hardware)</a>
+                <a class="tracking-wide text-blue-500 font-semibold hover:opacity-80 transition-opacity flex items-center" href="https://github.com/cabajian/median-filter-microblaze"><object class="h-4" type="image/svg+xml" data="static/github-icon.svg">[Github]</object>View Source (MicroBlaze)</a>
+            </div>
+        </div>
+        <!-- Project Card -->
+        <div class="mb-16 bg-white rounded-md shadow-xl flex">
+            <img src="static/proj-mips.png" class="hidden lg:inline-block object-cover w-1/3 rounded-l-md border-r-8 border-blue-500">
+            <div class="p-8 lg:p-16 border-l-8 border-blue-500">
+                <h2 class="mb-12 font-semibold text-3xl">Soft MIPS Processor</h2>
+                <p class="mb-8 font-sans">This project was completed as part of a digital design course's semester-long labratory exercise. A soft core pipelined MIPS microprocessor was designed and implemented on a Basys-3 FPGA. Each stage in the pipeline was verified both in simulation and hardware.</p>
+                <div class="mb-8 flex justify-start flex-wrap">
+                    <div class="mr-4 py-1 px-2 border-2 border-green-300 rounded-md font-light">VHDL</div>
+                    <div class="mr-4 py-1 px-2 border-2 border-green-300 rounded-md font-light">Vivado</div>
+                </div>
+                <a class="tracking-wide text-blue-500 font-semibold hover:opacity-80 transition-opacity flex items-center" href="https://github.com/cabajian/soft-mips-processor"><object class="h-4" type="image/svg+xml" data="static/github-icon.svg">[Github]</object>View Source</a>
+            </div>
+        </div>
+        <!-- Project Card -->
+        <div class="mb-16 bg-white rounded-md shadow-xl flex">
+            <img src="static/proj-checkers.png" class="hidden lg:inline-block object-cover w-1/3 rounded-l-md border-r-8 border-blue-500">
+            <div class="p-8 lg:p-16 border-l-8 border-blue-500">
+                <h2 class="mb-12 font-semibold text-3xl">Web Checkers</h2>
+                <p class="mb-8 font-sans">A locally-hosted web version of the classic Checkers board game created using the <a class="text-blue-500 hover:opacity-80 font-semibold" href="http://sparkjava.com/">Spark Java Web Framework</a>.</p>
+                <div class="mb-8 flex justify-start flex-wrap">
+                    <div class="mr-4 py-1 px-2 border-2 border-green-300 rounded-md font-light">Java</div>
+                    <div class="mr-4 py-1 px-2 border-2 border-green-300 rounded-md font-light">HTML</div>
+                    <div class="mr-4 py-1 px-2 border-2 border-green-300 rounded-md font-light">CSS</div>
+                </div>
+                <a class="tracking-wide text-blue-500 font-semibold hover:opacity-80 transition-opacity flex items-center" href="https://github.com/cabajian/web-checkers"><object class="h-4" type="image/svg+xml" data="static/github-icon.svg">[Github]</object>View Source</a>
+            </div>
+        </div>
+        <!-- Project Card -->
+        <div class="mb-16 bg-white rounded-md shadow-xl flex">
+            <img src="static/proj-bleweather.png" class="hidden lg:inline-block object-cover w-1/3 rounded-l-md border-r-8 border-blue-500">
+            <div class="p-8 lg:p-16 border-l-8 border-blue-500">
+                <h2 class="mb-12 font-semibold text-3xl">BLEWeather</h2>
+                <p class="mb-8 font-sans">A solar-powered portable weather station developed using Arduino and Android Studio. <a class="text-blue-500 font-semibold hover:opacity-80" href="https://www.instructables.com/BLEWeather-a-Portable-Bluetooth-Weather-Station/">Writeup here.</a></p>
+                <div class="mb-8 flex justify-start flex-wrap">
+                    <div class="mr-4 py-1 px-2 border-2 border-green-300 rounded-md font-light">C</div>
+                    <div class="mr-4 py-1 px-2 border-2 border-green-300 rounded-md font-light">Java</div>
+                    <div class="mr-4 py-1 px-2 border-2 border-green-300 rounded-md font-light">Arduino</div>
+                    <div class="mr-4 py-1 px-2 border-2 border-green-300 rounded-md font-light">Android Studio</div>
+                </div>
+                <a class="tracking-wide text-blue-500 font-semibold hover:opacity-80 transition-opacity flex items-center" href="https://github.com/cabajian/bleweather"><object class="h-4" type="image/svg+xml" data="static/github-icon.svg">[Github]</object>View Source</a>
+            </div>
+        </div>
+    </div>
+        
+    <!-- Contact Container -->
+    <div id="contact">
+        <div class="my-20 text-center">
+            <h1 class="py-6 inline-block text-2xl font-bold border-b-8 border-blue-500">Contact</h1>
+        </div>
+        <div class="lg:w-1/2 mx-auto flex flex-wrap justify-evenly">
+            <a href="mailto:abajianchris@gmail.com" class="transition-all hover:text-blue-500 hover:opacity-80 border-b-4 border-transparent hover:border-blue-500">abajianchris@gmail.com</a>
+            <a href="https://www.linkedin.com/in/christopher-abajian-018a44180/" class="transition-all hover:text-blue-500 hover:opacity-80 border-b-4 border-transparent hover:border-blue-500">LinkedIn</a>
+            <a href="https://github.com/cabajian" class="transition-all hover:text-blue-500 hover:opacity-80 border-b-4 border-transparent hover:border-blue-500">Github</a>
+        </div>
+    </div>
+</div>
+
+<!-- ******************** -->
+<!-- FOOTER               -->
+<!-- ******************** -->
+<footer class="max-w-screen-lg mt-16 sm:mt-32 mx-auto h-32 flex justify-center items-center">
+    <span>Made by Chris Abajian © <script type="text/javascript">document.write(new Date().getFullYear());</script></span>
+</footer>
+
+</body>
+</html>
